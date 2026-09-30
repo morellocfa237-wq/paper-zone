@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ressources PDF – Exam Paper</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="index.html" aria-label="Exam Paper – accueil">
+      <svg viewBox="0 0 165 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <polygon fill="#F58A07" points="0,68 24,46 78,102 150,14 162,26 82,132 70,142 58,132"/>
+        <polygon fill="#FDB44B" points="98,84 150,14 162,26 82,132"/>
+        <polygon fill="#123B3B" points="24,52 40,46 78,92 66,104"/>
+        <rect x="113" y="12" width="14" height="138" fill="#123B3B"/>
+      </svg>
+      <span>Exam Paper</span>
+    </a>
+
+    <a class="user" href="espace-enseignants.html" aria-label="Mon compte">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="8" r="4.2"/>
+        <path d="M3.5 21c0-4.6 3.8-7.2 8.5-7.2s8.5 2.6 8.5 7.2z"/>
+      </svg>
+    </a>
+
+    <nav aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="ressources.html" class="active" aria-current="page">Ressources PDF</a>
+      <a href="programmes.html">Liste des programmes</a>
+      <a href="reservation.html">Réservation en ligne</a>
+      <a href="espace-enseignants.html">Espace enseignants (Pro)</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Accueil</a> / Ressources PDF</p>
+        <h1>Tous les sujets d'examen</h1>
+        <p>Filtre par niveau et télécharge gratuitement, sans inscription.</p>
+
+        <form class="search" action="" method="get" role="search" onsubmit="return false">
+          <input type="search" id="search-input" placeholder="Rechercher un sujet ou un cours..." aria-label="Rechercher un sujet ou un cours">
+          <button class="btn" type="submit">Chercher</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters" role="group" aria-label="Filtrer par niveau">
+          <button class="chip-btn active" type="button" data-filter="tous" aria-pressed="true">Tous</button>
+          <button class="chip-btn" type="button" data-filter="troisieme" aria-pressed="false">Troisième</button>
+          <button class="chip-btn" type="button" data-filter="premiere" aria-pressed="false">Première</button>
+          <button class="chip-btn" type="button" data-filter="terminale" aria-pressed="false">Terminale</button>
+        </div>
+
+        <div class="cards">
+          <article class="card" data-niveau="terminale"><span class="tag">Terminale</span><h3>Mathématiques</h3><p>Session 2025 · Sujet + corrigé</p><a href="#">Télécharger le PDF</a></article>
+          <article class="card" data-niveau="terminale"><span class="tag">Terminale</span><h3>Physique-Chimie</h3><p>Session 2025 · Sujet + corrigé</p><a href="#">Télécharger le PDF</a></article>
+          <article class="card" data-niveau="terminale"><span class="tag">Terminale</span><h3>SVT</h3><p>Session 2024 · Sujet + corrigé</p><a href="#">Télécharger le PDF</a></article>
+          <article class="card" data-niveau="terminale"><span class="tag">Terminale</span><h3>Philosophie</h3><p>Session 2024 · Sujet seul</p><a href="#">Télécharger le PDF</a></article>
+          <article class="card" data-niveau="premiere"><span class="tag">Première</span><h3>Français</h3><p>Épreuve anticipée · Sujet + corrigé</p><a href="#">Télécharger le PDF</a></article>
+          <article class="card" data-niveau="premiere"><span class="tag">Première</span><h3>Mathématiques</h3><p>Devoir type · Sujet + corrigé</p><a href="#">Télécharger le PDF</a></article>
+          <article class="card" data-niveau="premiere"><span class="tag">Première</span><h3>Histoire-Géographie</h3><p>Devoir type · Sujet seul</p><a href="#">Télécharger le PDF</a></article>
+          <article class="card" data-niveau="troisieme"><span class="tag">Troisième</span><h3>Anglais</h3><p>Examen blanc · Sujet + corrigé</p><a href="#">Télécharger le PDF</a></article>
+          <article class="card" data-niveau="troisieme"><span class="tag">Troisième</span><h3>Mathématiques</h3><p>Brevet blanc · Sujet + corrigé</p><a href="#">Télécharger le PDF</a></article>
+          <article class="card" data-niveau="troisieme"><span class="tag">Troisième</span><h3>Français</h3><p>Brevet blanc · Sujet seul</p><a href="#">Télécharger le PDF</a></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Exam Paper. Tous droits réservés.</p>
+      <ul>
+        <li><a href="ressources.html">Ressources PDF</a></li>
+        <li><a href="programmes.html">Programmes</a></li>
+        <li><a href="reservation.html">Réservation</a></li>
+        <li><a href="espace-enseignants.html">Enseignants</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" aria-label="Retour en haut">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

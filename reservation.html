@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Réservation en ligne – Exam Paper</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="index.html" aria-label="Exam Paper – accueil">
+      <svg viewBox="0 0 165 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <polygon fill="#F58A07" points="0,68 24,46 78,102 150,14 162,26 82,132 70,142 58,132"/>
+        <polygon fill="#FDB44B" points="98,84 150,14 162,26 82,132"/>
+        <polygon fill="#123B3B" points="24,52 40,46 78,92 66,104"/>
+        <rect x="113" y="12" width="14" height="138" fill="#123B3B"/>
+      </svg>
+      <span>Exam Paper</span>
+    </a>
+
+    <a class="user" href="espace-enseignants.html" aria-label="Mon compte">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="8" r="4.2"/>
+        <path d="M3.5 21c0-4.6 3.8-7.2 8.5-7.2s8.5 2.6 8.5 7.2z"/>
+      </svg>
+    </a>
+
+    <nav aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="ressources.html">Ressources PDF</a>
+      <a href="programmes.html">Liste des programmes</a>
+      <a href="reservation.html" class="active" aria-current="page">Réservation en ligne</a>
+      <a href="espace-enseignants.html">Espace enseignants (Pro)</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Accueil</a> / Réservation en ligne</p>
+        <h1>Réserve une séance de révision</h1>
+        <p>Choisis la matière et la date qui t'arrangent, un enseignant confirme rapidement.</p>
+      </div>
+    </section>
+
+    <section class="section reservation-page">
+      <div class="container">
+        <ol class="steps">
+          <li><h3>Choisis la matière</h3><p>Sélectionne la matière et le niveau concernés.</p></li>
+          <li><h3>Choisis une date</h3><p>Indique le créneau qui te convient le mieux.</p></li>
+          <li><h3>Reçois la confirmation</h3><p>Un enseignant valide ta séance sous 24h.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section reservation">
+      <div class="container">
+        <div>
+          <h2>Formulaire de réservation</h2>
+          <p class="lead">Remplis ce formulaire, nous te recontactons rapidement pour confirmer.</p>
+        </div>
+
+        <form class="form" id="reservation-form">
+          <label>Nom complet
+            <input type="text" name="nom" required autocomplete="name">
+          </label>
+          <label>Matière
+            <select name="matiere" required>
+              <option value="">Choisir une matière</option>
+              <option>Mathématiques</option>
+              <option>Physique-Chimie</option>
+              <option>Français</option>
+              <option>SVT</option>
+              <option>Anglais</option>
+            </select>
+          </label>
+          <label>Date souhaitée
+            <input type="date" name="date" required>
+          </label>
+          <button class="btn" type="submit">Réserver</button>
+          <p class="form-msg" id="form-msg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Exam Paper. Tous droits réservés.</p>
+      <ul>
+        <li><a href="ressources.html">Ressources PDF</a></li>
+        <li><a href="programmes.html">Programmes</a></li>
+        <li><a href="reservation.html">Réservation</a></li>
+        <li><a href="espace-enseignants.html">Enseignants</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" aria-label="Retour en haut">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

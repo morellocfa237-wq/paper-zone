@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Espace enseignants (Pro) – Exam Paper</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="index.html" aria-label="Exam Paper – accueil">
+      <svg viewBox="0 0 165 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <polygon fill="#F58A07" points="0,68 24,46 78,102 150,14 162,26 82,132 70,142 58,132"/>
+        <polygon fill="#FDB44B" points="98,84 150,14 162,26 82,132"/>
+        <polygon fill="#123B3B" points="24,52 40,46 78,92 66,104"/>
+        <rect x="113" y="12" width="14" height="138" fill="#123B3B"/>
+      </svg>
+      <span>Exam Paper</span>
+    </a>
+
+    <a class="user" href="espace-enseignants.html" aria-label="Mon compte">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="8" r="4.2"/>
+        <path d="M3.5 21c0-4.6 3.8-7.2 8.5-7.2s8.5 2.6 8.5 7.2z"/>
+      </svg>
+    </a>
+
+    <nav aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="ressources.html">Ressources PDF</a>
+      <a href="programmes.html">Liste des programmes</a>
+      <a href="reservation.html">Réservation en ligne</a>
+      <a href="espace-enseignants.html" class="active" aria-current="page">Espace enseignants (Pro)</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Accueil</a> / Espace enseignants (Pro)</p>
+        <h1>L'espace pensé pour les enseignants</h1>
+        <p>Publie tes sujets, suis les réservations et partage tes corrigés en quelques clics.</p>
+      </div>
+    </section>
+
+    <section class="section teachers">
+      <div class="container">
+        <div class="teacher-grid">
+          <div class="cards">
+            <article class="card">
+              <h3>Publie tes sujets</h3>
+              <p>Dépose tes sujets et corrigés en PDF, classés par matière et niveau.</p>
+            </article>
+            <article class="card">
+              <h3>Suis les réservations</h3>
+              <p>Consulte et confirme les demandes de séance en un coup d'œil.</p>
+            </article>
+            <article class="card">
+              <h3>Partage avec tes élèves</h3>
+              <p>Envoie un lien direct vers tes ressources à toute ta classe.</p>
+            </article>
+            <article class="card">
+              <h3>Suis les statistiques</h3>
+              <p>Vois quels sujets sont les plus téléchargés par les élèves.</p>
+            </article>
+          </div>
+
+          <div class="auth-card">
+            <h3>Connexion enseignant</h3>
+            <p class="lead">Accède à ton espace Pro.</p>
+            <form class="form" id="teacher-form">
+              <label>Adresse e-mail
+                <input type="email" name="email" required autocomplete="email">
+              </label>
+              <label>Mot de passe
+                <input type="password" name="password" required autocomplete="current-password">
+              </label>
+              <button class="btn" type="submit">Se connecter</button>
+              <p class="form-msg" id="teacher-msg" role="status"></p>
+            </form>
+            <p class="switch">Pas encore inscrit ? <a href="#">Créer un compte Pro</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Exam Paper. Tous droits réservés.</p>
+      <ul>
+        <li><a href="ressources.html">Ressources PDF</a></li>
+        <li><a href="programmes.html">Programmes</a></li>
+        <li><a href="reservation.html">Réservation</a></li>
+        <li><a href="espace-enseignants.html">Enseignants</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" aria-label="Retour en haut">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
